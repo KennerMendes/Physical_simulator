@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Simulador Físico | Continuidade</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Simulador Físico</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'continuity.html'" class="button">English</button>
+      <button onclick="document.location = 'continuidade.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Equação da Continuidade</h2>
+      <p>
+        A equalção da continuidade diz apenas que ao strangular algum fluxo, a
+        velocidade do fluido vai aumetar depois da estricção (para manter a vazão
+        constante).<br>
+        A simulação abaixo é uma representação simplificada desse fenômeno. Nós vamos
+        usar um sistema de partículas ao invés de um fuido em si, a cor da partícula
+        é referente à sua velocidade horizontal (direção do fluxo): verde para
+        muito lenta, vermelho para muito rápida e amarelo para moderada. Para
+        estrangular o fluxo, posicione o mouse sobre a simulação e aperte o botão
+        esquerdo; para liberar o fluxo, apenas solte o botão.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 300px; height: 300px;"></canvas>
+    </p>
+    <div>
+      <p>
+        No fluxo normal (sem estricção) as partículas são predominantemente
+        amarelas. Ao estrangular o fluxo, muitas partículas antes da estricção
+        se tornam verdes e depois dela, algumas se tornal vermelhas, indicando
+        que a velocidade média do fluxo depois da estricção é maior que antes.<br>
+        Pensando em termos de espaço esse fenômeno também faz sentido. Antes da
+        estricção há espaço suficiente para muitas partículas passarem ao mesmo
+        tempo, depois dela há espaço para apenas uma, então é muito razoável
+        admitir que partículas antes da estricção vão fluir mais devagar que
+        depois.<br>
+        Porém, perceba que a pressão (no nosso modelo representada pelas colisões
+        das partículas) é maior antes da estricção que depois (para mais informações
+        pesquise a equação de Bernoulli). Perceba também, que nossa simulação é
+        apenas uma simplificação com partículas sólidas, não um fluido real, o que
+        significa que não temos "pressão" constante, logo não teremos velocidade do
+        fluxo constante, por isso você vê algumas partículas verdes após a estricção
+        também.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'entropia.html'" class="button">Anterior</button>
+      <button onclick="document.location = 'kepler_pt.html'" class="button">Próximo</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="continuity.js"></script>
+  </body>
+</html>

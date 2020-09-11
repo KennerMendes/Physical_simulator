@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Simulador Físico | Le Chatelier</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Simulador Físico</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'chatelier.html'" class="button">English</button>
+      <button onclick="document.location = 'chatelier_pt.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Princípio de Le Chatelier</h2>
+      <p>
+        Esse princípio afirma que se você perturbar um equilíbrio químico, essa
+        reação será acelerada no sentido de aliviar o agente que causou o estresse.
+        A simulação abaixo representa o seguinte equilíbrio químico:<br>
+        A + B ⇌  C + D <br>
+        Onde as partículas verdes são moléculas da substância A; partículas amarelas,
+        da B; partículas vermelhas, da C e partículas azuis, da D. Quando A e B colidem
+        com velocidade suficiente (nesse modelo simplificado) elas tornam-se C e D e vice-versa.
+        Perceba que na situação inicial, na maior parte do tempo, você vê 3 partículas
+        de cada substância. Clique na simulação para perturbar o equilíbrio adicionando
+        mais partículas de A e aumentando sua concentração.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        Quando o equilíbrio é perturbado, ele avança no sentido de reduzir a
+        concentração de A. Logo, a reação direta é acelerada, diminuindo as
+        concentrações de A e B e aumentando as de C e D. Perceba que quando
+        o novo equilíbrio é alcançado, na maior parte do tempo, você vê 1
+        partícula amarela (substância B), indicando que o fenômeno descrito
+        aconteceu.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'kepler_pt.html'" class="button">Anterior</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="chatelier.js"></script>
+  </body>
+</html>

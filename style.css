@@ -1,0 +1,52 @@
+body
+{
+    background-color: #1f1f14;
+}
+
+h1
+{
+    font-size: 72px;
+    font-weight: 1000;
+    color: #e62e00;
+}
+
+div
+{
+    margin: auto;
+    background-color: #000000;
+    text-align: center;
+    width: 70%;
+    font-size: 22px;
+    color: green;
+    border-radius: 12px;
+    font-family: "Andale Mono", Andale Mono, monospace;
+}
+
+.control-button
+{
+    width: 200px;
+    height: 30px;
+    background-color: #e62e00;
+}
+
+.button
+{
+     color: green;
+     background-color: black;
+     border-radius: 8px;
+}
+
+.button:hover
+{
+    color: #e62e00;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Simulador Físico | Entropia</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Simulador Físico</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'index.html'" class="button">English</button>
+      <button onclick="document.location = 'entropia.html'" class="button">Português</button>
+    </div>
+    <div style="text-align: center;">
+      <p>
+        O propósito desse website é fornecer algumas belas e úteis visualizações de alguns
+        fenômenos não triviais.<br>
+        As simulações a seguir não são uma reprodução exata do mundo real, aqui há simplificações,
+        mesmo assim, seu valor didático não é afetado.
+      </p>
+    </div>
+    <div>
+      <h2>Entropia</h2>
+      <p>
+        Entropia é algo relacionado à aleatoriedade molecular, quantas formas diferentes
+        (micro estados) é possível um sistema assumir e continuar sendo aquele sistema
+        (macro estado). E num processo espontâneo, ela sempre aumenta.<br>
+        A simulação abaixo vai te mostrar como se parece o aumento da entropia.
+        Com o mouse sobre a simulação, aperte o botão do mouse para remover a
+        barreira entre os dois lados. Solte ele para restaurar a divisão.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        Ao remover a barreira você permite que a energia se distribua entre mais
+        partículas em mais posições, portanto há mais micro estados, a entropia
+        aumenta. Quando você restaura a barreira, a situação inicial não retornará,
+        a energia ainda vai estar mais distribuida, a entropia não vai diminuir.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'continuidade.html'" class="button">Próximo</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

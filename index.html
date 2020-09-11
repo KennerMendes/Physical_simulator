@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Physical Simulator | Entropy</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Physical Simulator</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'index.html'" class="button">English</button>
+      <button onclick="document.location = 'entropia.html'" class="button">Português</button>
+    </div>
+    <div style="text-align: center;">
+      <p>
+        This website's purpouse is provide some beaultifull and usefull visualizations of
+        some non-trivial phenomena.<br>
+        The following simulations are not an exact reprodution of real world, there are
+        simplifications, even so, your didatic value is not affected.
+      </p>
+    </div>
+    <div>
+      <h2>Entropy</h2>
+      <p>
+        Entropy is something linked to molecular randomness, how many different forms
+        (micro states) is possible some system assumes and still being that system
+        (macro state). And in a spontaneous process, it always increases.<br>
+        The simulation below is going to show you how looks like the entropy increase.
+        With mouse over the simulation, press mouse button to remove the barrier
+        between the two sides. Release it to restore the division.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        When you remove the barrier, you allow energy being distributed among more
+        particles in more positions, therefore there are more micro states, entropy
+        increases. When you restore barrier, the initial situation will not return,
+        energy will still be more distributted, entropy is not going to decrease.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'continuity.html'" class="button">Next</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

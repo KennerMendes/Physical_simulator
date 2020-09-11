@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Simulador Físico | Kepler</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Simulador Físico</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'kepler.html'" class="button">English</button>
+      <button onclick="document.location = 'kepler_pt.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Segunda lei de Kepler</h2>
+      <p>
+        Essa lei afrima que a reta entre um planeta e seu sol varre áreas iguais
+        em intervalos de tempo iguais. O que significa (entre outras coisas) que
+        quanto mais perto do sol, mais rápido o planeta estará.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        Perceba que a variação da velocidade é uma consequência do princípio
+        de conservação de energia. Se o planeta estiver perto do sol, sua energia
+        potencial é menor, então sua energia cinética tem que ser maior, se
+        ele estiver longe, sua energia potencial é maior, logo, sua energia cinética
+        precisa ser menor.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'continuidade.html'" class="button">Anterior</button>
+      <button onclick="document.location = 'chatelier_pt'" class="button">Próximo</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="kepler.js"></script>
+  </body>
+</html>

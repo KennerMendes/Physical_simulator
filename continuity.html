@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Physical Simulator | Continuity</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Physical Simulator</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'continuity.html'" class="button">English</button>
+      <button onclick="document.location = 'continuidade.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Continuity Equation</h2>
+      <p>
+        Continuity equation only says when you strangle some flow, fluid velocity will
+        increase after the tightness (to keep the flow constant).<br>
+        The simulation below is a simplified representation of this phenomenon.
+        We will use a particle system rather than fluid itself, the particle's color
+        refers to its horizontal velocity (flow direction): green for very slow,
+        red for very fast and yellow for moderate. To tight the flow, put mouse over
+        simulation and press mouse button; to free the flow, only release the button.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 300px; height: 300px;"></canvas>
+    </p>
+    <div>
+      <p>
+        In the normal flow (no tightness) particles are predominantly yellow.
+        When you strangle this flow, a lot of particles before tightness become
+        green and after tightness, some particles become red, indicating avarage
+        flow velocity after tightness is higher then before.<br>
+        Thinking about space, this phenomenon makes sense too. Before tightness
+        there is space enough to a lot of particles pass throug at the same time,
+        after tightness there is space for only one, so it is pretty much reasonable
+        to admit particles before tightness will flow slower then after.<br>
+        However, realize that the pressure (in our model it is represented by particles
+        collisions) is higher before tightness than after (for more clarifications
+        search for Bernoulli's equation). Realize too, our simulation is just a
+        simplification with solid particles, not a real fluid, what means we don't
+        heave constant "pressure", hence we will not have constant flow velocity,
+        because of this you see some green particles after tightness too.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'index.html'" class="button">Previous</button>
+      <button onclick="document.location = 'kepler.html'" class="button">Next</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="continuity.js"></script>
+  </body>
+</html>

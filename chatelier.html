@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Physical Simulator | Le Chatelier</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Physical Simulator</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'chatelier.html'" class="button">English</button>
+      <button onclick="document.location = 'chatelier_pt.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Le Chatelier's Principle</h2>
+      <p>
+        This principle claims that if you disturb a chemical equilibrium, that reaction
+        will be accelerated towards relieving the stressor. The simulation below
+        represents the following chemical equilibrium:<br>
+        A + B ⇌  C + D <br>
+        Where green particles are A substance molecules, yellow particles are B, red particles
+        are C and blue particles are D. When A and B collide with enough velocity (in this
+        simplified simulation) they become C and D and vice versa. Realize at initial
+        situation you, at most of the time, see 3 particles of each substance. Click
+        over the simulation to disturb the equilibrium adding more A particles and
+        increasing its concentration.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        When equilibrium is disturbed, it advances towards reducing A concentration.
+        As a result, direct reaction will be accelerated, decreasing A and B
+        concentrations and increasing C and D concentrations. Realize when the new
+        equilibrium is reached, at the most of time, you see 1 yellow particle
+        (B substance) indicating the described phenomenom happened.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'kepler.html'" class="button">Previous</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="chatelier.js"></script>
+  </body>
+</html>

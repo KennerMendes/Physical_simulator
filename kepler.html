@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Physical Simulator | Kepler</title>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 align="center">Physical Simulator</h1>
+    <div class="control-button">
+      <button onclick="document.location = 'kepler.html'" class="button">English</button>
+      <button onclick="document.location = 'kepler_pt.html'" class="button">Português</button>
+    </div>
+    </div>
+    <div>
+      <h2>Kepler's second law</h2>
+      <p>
+        This law says that the line between a planet and your sun sweeps equal areas
+        in equal time intervals. Which means (among other things) that the closer the planet
+        is to the sun, faster it is.
+      </p>
+    </div >
+    <p align="center">
+      <canvas id="mycanvas" style="width: 600px; height: 600px;"></canvas>
+    </p>
+    <div>
+      <p>
+        Realize the velocity variation is a consequence of the energy conservation
+        law. If planet is close to the sun your potential energy is lower, so
+        kinetic energy needs to be higher, if it's far, potential energy is higher,
+        kinetic energy needs to be lower.
+      </p>
+    </div>
+    <div class="control-button">
+      <button onclick="document.location = 'continuity.html'" class="button">Previous</button>
+      <button onclick="document.location = 'chatelier'" class="button">Next</button>
+    </div>
+    <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="kepler.js"></script>
+  </body>
+</html>
